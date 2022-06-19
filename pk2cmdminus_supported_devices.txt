@@ -1,0 +1,1079 @@
+PICkitminus and PK2CMD minus supported devices.
+Device file based on last publicly available PICKitPlus
+device file 2.63.218.15 from https://github.com/Anobium/PICKitPlus
+Some devices added and fixed by jaka.
+Device file and software updates available from
+http://kair.us/projects/pickit2minus/index.html
+
+
+Device File Version:   2.63.226
+Number of devices = 1066
+
+Device Name                  Device Family
+-----------                  -------------
+PIC10F200                    Baseline
+PIC10F202                    Baseline
+PIC10F204                    Baseline
+PIC10F206                    Baseline
+PIC10F220                    Baseline
+PIC10F222                    Baseline
+PIC12F508                    Baseline
+PIC12F509                    Baseline
+PIC12F510                    Baseline
+PIC12F519                    Baseline
+PIC16F54                     Baseline
+PIC16F57                     Baseline
+PIC16F59                     Baseline
+PIC16F505                    Baseline
+PIC16F506                    Baseline
+PIC16F526                    Baseline
+PIC16F527                    Baseline
+PIC16F570                    Baseline
+PIC12F609                    Midrange/Standard
+PIC12F615                    Midrange/Standard
+PIC12F617                    Midrange/Standard
+PIC12F629                    Midrange/Standard
+PIC12F635                    Midrange/Standard
+PIC12F675                    Midrange/Standard
+PIC12F683                    Midrange/Standard
+PIC12F752                    Midrange/Standard
+PIC12HV609                   Midrange/Standard
+PIC12HV615                   Midrange/Standard
+PIC12HV752                   Midrange/Standard
+PIC12LF1552                  Midrange/Standard
+PIC16F72                     Midrange/Standard
+PIC16F73                     Midrange/Standard
+PIC16F74                     Midrange/Standard
+PIC16F76                     Midrange/Standard
+PIC16F77                     Midrange/Standard
+PIC16F84A                    Midrange/Standard
+PIC16F87                     Midrange/Standard
+PIC16F88                     Midrange/Standard
+PIC16F610                    Midrange/Standard
+PIC16F616                    Midrange/Standard
+PIC16F627                    Midrange/Standard
+PIC16F627A                   Midrange/Standard
+PIC16F628                    Midrange/Standard
+PIC16F628A                   Midrange/Standard
+PIC16F630                    Midrange/Standard
+PIC16F631                    Midrange/Standard
+PIC16F636 (639)              Midrange/Standard
+PIC16F648A                   Midrange/Standard
+PIC16F676                    Midrange/Standard
+PIC16F677                    Midrange/Standard
+PIC16F684                    Midrange/Standard
+PIC16F685                    Midrange/Standard
+PIC16F687                    Midrange/Standard
+PIC16F688                    Midrange/Standard
+PIC16F689                    Midrange/Standard
+PIC16F690                    Midrange/Standard
+PIC16F716                    Midrange/Standard
+PIC16F737                    Midrange/Standard
+PIC16F747                    Midrange/Standard
+PIC16F767                    Midrange/Standard
+PIC16F777                    Midrange/Standard
+PIC16F785                    Midrange/Standard
+PIC16F818                    Midrange/Standard
+PIC16F819                    Midrange/Standard
+PIC16F870                    Midrange/Standard
+PIC16F871                    Midrange/Standard
+PIC16F872                    Midrange/Standard
+PIC16F873                    Midrange/Standard
+PIC16F873A                   Midrange/Standard
+PIC16F874                    Midrange/Standard
+PIC16F874A                   Midrange/Standard
+PIC16F876                    Midrange/Standard
+PIC16F876A                   Midrange/Standard
+PIC16F877                    Midrange/Standard
+PIC16F877A                   Midrange/Standard
+PIC16F882                    Midrange/Standard
+PIC16F883                    Midrange/Standard
+PIC16F884                    Midrange/Standard
+PIC16F886                    Midrange/Standard
+PIC16F887                    Midrange/Standard
+PIC16F913                    Midrange/Standard
+PIC16F914                    Midrange/Standard
+PIC16F916                    Midrange/Standard
+PIC16F917                    Midrange/Standard
+PIC16F946                    Midrange/Standard
+PIC16HV610                   Midrange/Standard
+PIC16HV616                   Midrange/Standard
+PIC16HV785                   Midrange/Standard
+PIC16C83                     Midrange/NoDeviceId
+PIC16C84                     Midrange/NoDeviceId
+PIC16F83                     Midrange/NoDeviceId
+PIC16F84                     Midrange/NoDeviceId
+PIC10F320                    Midrange/1.8V Min
+PIC10F322                    Midrange/1.8V Min
+PIC10LF320                   Midrange/1.8V Min
+PIC10LF322                   Midrange/1.8V Min
+PIC12F1501                   Midrange/1.8V Min
+PIC12F1822                   Midrange/1.8V Min
+PIC12F1840                   Midrange/1.8V Min
+PIC12LF1501                  Midrange/1.8V Min
+PIC12LF1822                  Midrange/1.8V Min
+PIC12LF1840                  Midrange/1.8V Min
+PIC16F707                    Midrange/1.8V Min
+PIC16F720                    Midrange/1.8V Min
+PIC16F721                    Midrange/1.8V Min
+PIC16F722                    Midrange/1.8V Min
+PIC16F722A                   Midrange/1.8V Min
+PIC16F723                    Midrange/1.8V Min
+PIC16F723A                   Midrange/1.8V Min
+PIC16F724                    Midrange/1.8V Min
+PIC16F726                    Midrange/1.8V Min
+PIC16F727                    Midrange/1.8V Min
+PIC16F1503                   Midrange/1.8V Min
+PIC16F1507                   Midrange/1.8V Min
+PIC16F1508                   Midrange/1.8V Min
+PIC16F1509                   Midrange/1.8V Min
+PIC16F1512                   Midrange/1.8V Min
+PIC16F1513                   Midrange/1.8V Min
+PIC16F1516                   Midrange/1.8V Min
+PIC16F1517                   Midrange/1.8V Min
+PIC16F1518                   Midrange/1.8V Min
+PIC16F1519                   Midrange/1.8V Min
+PIC16F1526                   Midrange/1.8V Min
+PIC16F1527                   Midrange/1.8V Min
+PIC16F1782                   Midrange/1.8V Min
+PIC16F1783                   Midrange/1.8V Min
+PIC16F1784                   Midrange/1.8V Min
+PIC16F1786                   Midrange/1.8V Min
+PIC16F1787                   Midrange/1.8V Min
+PIC16F1823                   Midrange/1.8V Min
+PIC16F1824                   Midrange/1.8V Min
+PIC16F1825                   Midrange/1.8V Min
+PIC16F1826                   Midrange/1.8V Min
+PIC16F1827                   Midrange/1.8V Min
+PIC16F1828                   Midrange/1.8V Min
+PIC16F1829                   Midrange/1.8V Min
+PIC16F1847                   Midrange/1.8V Min
+PIC16F1933                   Midrange/1.8V Min
+PIC16F1934                   Midrange/1.8V Min
+PIC16F1936                   Midrange/1.8V Min
+PIC16F1937                   Midrange/1.8V Min
+PIC16F1938                   Midrange/1.8V Min
+PIC16F1939                   Midrange/1.8V Min
+PIC16F1946                   Midrange/1.8V Min
+PIC16F1947                   Midrange/1.8V Min
+PIC16LF707                   Midrange/1.8V Min
+PIC16LF720                   Midrange/1.8V Min
+PIC16LF721                   Midrange/1.8V Min
+PIC16LF722                   Midrange/1.8V Min
+PIC16LF722A                  Midrange/1.8V Min
+PIC16LF723                   Midrange/1.8V Min
+PIC16LF723A                  Midrange/1.8V Min
+PIC16LF724                   Midrange/1.8V Min
+PIC16LF726                   Midrange/1.8V Min
+PIC16LF727                   Midrange/1.8V Min
+PIC16LF1503                  Midrange/1.8V Min
+PIC16LF1507                  Midrange/1.8V Min
+PIC16LF1508                  Midrange/1.8V Min
+PIC16LF1509                  Midrange/1.8V Min
+PIC16LF1512                  Midrange/1.8V Min
+PIC16LF1513                  Midrange/1.8V Min
+PIC16LF1516                  Midrange/1.8V Min
+PIC16LF1517                  Midrange/1.8V Min
+PIC16LF1518                  Midrange/1.8V Min
+PIC16LF1519                  Midrange/1.8V Min
+PIC16LF1526                  Midrange/1.8V Min
+PIC16LF1527                  Midrange/1.8V Min
+PIC16LF1554                  Midrange/1.8V Min
+PIC16LF1559                  Midrange/1.8V Min
+PIC16LF1782                  Midrange/1.8V Min
+PIC16LF1783                  Midrange/1.8V Min
+PIC16LF1784                  Midrange/1.8V Min
+PIC16LF1786                  Midrange/1.8V Min
+PIC16LF1787                  Midrange/1.8V Min
+PIC16LF1823                  Midrange/1.8V Min
+PIC16LF1824                  Midrange/1.8V Min
+PIC16LF1825                  Midrange/1.8V Min
+PIC16LF1826                  Midrange/1.8V Min
+PIC16LF1827                  Midrange/1.8V Min
+PIC16LF1828                  Midrange/1.8V Min
+PIC16LF1829                  Midrange/1.8V Min
+PIC16LF1847                  Midrange/1.8V Min
+PIC16LF1902                  Midrange/1.8V Min
+PIC16LF1903                  Midrange/1.8V Min
+PIC16LF1904                  Midrange/1.8V Min
+PIC16LF1906                  Midrange/1.8V Min
+PIC16LF1907                  Midrange/1.8V Min
+PIC16LF1933                  Midrange/1.8V Min
+PIC16LF1934                  Midrange/1.8V Min
+PIC16LF1936                  Midrange/1.8V Min
+PIC16LF1937                  Midrange/1.8V Min
+PIC16LF1938                  Midrange/1.8V Min
+PIC16LF1939                  Midrange/1.8V Min
+PIC16LF1946                  Midrange/1.8V Min
+PIC16LF1947                  Midrange/1.8V Min
+PIC12F1571                   Midrange/1.8v MinII
+PIC12F1572                   Midrange/1.8v MinII
+PIC12F1612                   Midrange/1.8v MinII
+PIC12LF1571                  Midrange/1.8v MinII
+PIC12LF1572                  Midrange/1.8v MinII
+PIC12LF1612                  Midrange/1.8v MinII
+PIC16F1454                   Midrange/1.8v MinII
+PIC16F1455                   Midrange/1.8v MinII
+PIC16F1459                   Midrange/1.8v MinII
+PIC16F1574                   Midrange/1.8v MinII
+PIC16F1575                   Midrange/1.8v MinII
+PIC16F1578                   Midrange/1.8v MinII
+PIC16F1579                   Midrange/1.8v MinII
+PIC16F1613                   Midrange/1.8v MinII
+PIC16F1614                   Midrange/1.8v MinII
+PIC16F1615                   Midrange/1.8v MinII
+PIC16F1618                   Midrange/1.8v MinII
+PIC16F1619                   Midrange/1.8v MinII
+PIC16F1703                   Midrange/1.8v MinII
+PIC16F1704                   Midrange/1.8v MinII
+PIC16F1705                   Midrange/1.8v MinII
+PIC16F1707                   Midrange/1.8v MinII
+PIC16F1708                   Midrange/1.8v MinII
+PIC16F1709                   Midrange/1.8v MinII
+PIC16F1713                   Midrange/1.8v MinII
+PIC16F1716                   Midrange/1.8v MinII
+PIC16F1717                   Midrange/1.8v MinII
+PIC16F1718                   Midrange/1.8v MinII
+PIC16F1719                   Midrange/1.8v MinII
+PIC16F1764                   Midrange/1.8v MinII
+PIC16F1765                   Midrange/1.8v MinII
+PIC16F1768                   Midrange/1.8v MinII
+PIC16F1769                   Midrange/1.8v MinII
+PIC16F1773                   Midrange/1.8v MinII
+PIC16F1776                   Midrange/1.8v MinII
+PIC16F1777                   Midrange/1.8v MinII
+PIC16F1778                   Midrange/1.8v MinII
+PIC16F1779                   Midrange/1.8v MinII
+PIC16F1788                   Midrange/1.8v MinII
+PIC16F1789                   Midrange/1.8v MinII
+PIC16F18313                  Midrange/1.8v MinII
+PIC16F18323                  Midrange/1.8v MinII
+PIC16F18324                  Midrange/1.8v MinII
+PIC16F18325                  Midrange/1.8v MinII
+PIC16F18326                  Midrange/1.8v MinII
+PIC16F18344                  Midrange/1.8v MinII
+PIC16F18345                  Midrange/1.8v MinII
+PIC16F18346                  Midrange/1.8v MinII
+PIC16LF1454                  Midrange/1.8v MinII
+PIC16LF1455                  Midrange/1.8v MinII
+PIC16LF1459                  Midrange/1.8v MinII
+PIC16LF1566                  Midrange/1.8v MinII
+PIC16LF1567                  Midrange/1.8v MinII
+PIC16LF1574                  Midrange/1.8v MinII
+PIC16LF1575                  Midrange/1.8v MinII
+PIC16LF1578                  Midrange/1.8v MinII
+PIC16LF1579                  Midrange/1.8v MinII
+PIC16LF1613                  Midrange/1.8v MinII
+PIC16LF1614                  Midrange/1.8v MinII
+PIC16LF1615                  Midrange/1.8v MinII
+PIC16LF1618                  Midrange/1.8v MinII
+PIC16LF1619                  Midrange/1.8v MinII
+PIC16LF1703                  Midrange/1.8v MinII
+PIC16LF1704                  Midrange/1.8v MinII
+PIC16LF1705                  Midrange/1.8v MinII
+PIC16LF1707                  Midrange/1.8v MinII
+PIC16LF1708                  Midrange/1.8v MinII
+PIC16LF1709                  Midrange/1.8v MinII
+PIC16LF1713                  Midrange/1.8v MinII
+PIC16LF1716                  Midrange/1.8v MinII
+PIC16LF1717                  Midrange/1.8v MinII
+PIC16LF1718                  Midrange/1.8v MinII
+PIC16LF1719                  Midrange/1.8v MinII
+PIC16LF1764                  Midrange/1.8v MinII
+PIC16LF1765                  Midrange/1.8v MinII
+PIC16LF1768                  Midrange/1.8v MinII
+PIC16LF1769                  Midrange/1.8v MinII
+PIC16LF1773                  Midrange/1.8v MinII
+PIC16LF1776                  Midrange/1.8v MinII
+PIC16LF1777                  Midrange/1.8v MinII
+PIC16LF1778                  Midrange/1.8v MinII
+PIC16LF1779                  Midrange/1.8v MinII
+PIC16LF1788                  Midrange/1.8v MinII
+PIC16LF1789                  Midrange/1.8v MinII
+PIC16LF18313                 Midrange/1.8v MinII
+PIC16LF18323                 Midrange/1.8v MinII
+PIC16LF18324                 Midrange/1.8v MinII
+PIC16LF18325                 Midrange/1.8v MinII
+PIC16LF18326                 Midrange/1.8v MinII
+PIC16LF18344                 Midrange/1.8v MinII
+PIC16LF18345                 Midrange/1.8v MinII
+PIC16LF18346                 Midrange/1.8v MinII
+PIC16F15213                  Midrange/1.8V Min MSB1st
+PIC16F15214                  Midrange/1.8V Min MSB1st
+PIC16F15223                  Midrange/1.8V Min MSB1st
+PIC16F15224                  Midrange/1.8V Min MSB1st
+PIC16F15225                  Midrange/1.8V Min MSB1st
+PIC16F15243                  Midrange/1.8V Min MSB1st
+PIC16F15244                  Midrange/1.8V Min MSB1st
+PIC16F15245                  Midrange/1.8V Min MSB1st
+PIC16F15254                  Midrange/1.8V Min MSB1st
+PIC16F15255                  Midrange/1.8V Min MSB1st
+PIC16F15256                  Midrange/1.8V Min MSB1st
+PIC16F15274                  Midrange/1.8V Min MSB1st
+PIC16F15275                  Midrange/1.8V Min MSB1st
+PIC16F15276                  Midrange/1.8V Min MSB1st
+PIC16F15313                  Midrange/1.8V Min MSB1st
+PIC16F15323                  Midrange/1.8V Min MSB1st
+PIC16F15324                  Midrange/1.8V Min MSB1st
+PIC16F15325                  Midrange/1.8V Min MSB1st
+PIC16F15344                  Midrange/1.8V Min MSB1st
+PIC16F15345                  Midrange/1.8V Min MSB1st
+PIC16F15354                  Midrange/1.8V Min MSB1st
+PIC16F15355                  Midrange/1.8V Min MSB1st
+PIC16F15356                  Midrange/1.8V Min MSB1st
+PIC16F15375                  Midrange/1.8V Min MSB1st
+PIC16F15376                  Midrange/1.8V Min MSB1st
+PIC16F15385                  Midrange/1.8V Min MSB1st
+PIC16F15386                  Midrange/1.8V Min MSB1st
+PIC16F18013                  Midrange/1.8V Min MSB1st
+PIC16F18014                  Midrange/1.8V Min MSB1st
+PIC16F18015                  Midrange/1.8V Min MSB1st
+PIC16F18023                  Midrange/1.8V Min MSB1st
+PIC16F18024                  Midrange/1.8V Min MSB1st
+PIC16F18025                  Midrange/1.8V Min MSB1st
+PIC16F18026                  Midrange/1.8V Min MSB1st
+PIC16F18044                  Midrange/1.8V Min MSB1st
+PIC16F18045                  Midrange/1.8V Min MSB1st
+PIC16F18046                  Midrange/1.8V Min MSB1st
+PIC16F18054                  Midrange/1.8V Min MSB1st
+PIC16F18055                  Midrange/1.8V Min MSB1st
+PIC16F18056                  Midrange/1.8V Min MSB1st
+PIC16F18074                  Midrange/1.8V Min MSB1st
+PIC16F18075                  Midrange/1.8V Min MSB1st
+PIC16F18076                  Midrange/1.8V Min MSB1st
+PIC16F18424                  Midrange/1.8V Min MSB1st
+PIC16F18425                  Midrange/1.8V Min MSB1st
+PIC16F18426                  Midrange/1.8V Min MSB1st
+PIC16F18444                  Midrange/1.8V Min MSB1st
+PIC16F18445                  Midrange/1.8V Min MSB1st
+PIC16F18446                  Midrange/1.8V Min MSB1st
+PIC16F18455                  Midrange/1.8V Min MSB1st
+PIC16F18456                  Midrange/1.8V Min MSB1st
+PIC16F18854                  Midrange/1.8V Min MSB1st
+PIC16F18855                  Midrange/1.8V Min MSB1st
+PIC16F18856                  Midrange/1.8V Min MSB1st
+PIC16F18857                  Midrange/1.8V Min MSB1st
+PIC16F18875                  Midrange/1.8V Min MSB1st
+PIC16F18876                  Midrange/1.8V Min MSB1st
+PIC16F18877                  Midrange/1.8V Min MSB1st
+PIC16F19155                  Midrange/1.8V Min MSB1st
+PIC16F19156                  Midrange/1.8V Min MSB1st
+PIC16F19175                  Midrange/1.8V Min MSB1st
+PIC16F19176                  Midrange/1.8V Min MSB1st
+PIC16F19185                  Midrange/1.8V Min MSB1st
+PIC16F19186                  Midrange/1.8V Min MSB1st
+PIC16F19195                  Midrange/1.8V Min MSB1st
+PIC16F19196                  Midrange/1.8V Min MSB1st
+PIC16F19197                  Midrange/1.8V Min MSB1st
+PIC16LF15313                 Midrange/1.8V Min MSB1st
+PIC16LF15323                 Midrange/1.8V Min MSB1st
+PIC16LF15324                 Midrange/1.8V Min MSB1st
+PIC16LF15325                 Midrange/1.8V Min MSB1st
+PIC16LF15344                 Midrange/1.8V Min MSB1st
+PIC16LF15345                 Midrange/1.8V Min MSB1st
+PIC16LF15354                 Midrange/1.8V Min MSB1st
+PIC16LF15355                 Midrange/1.8V Min MSB1st
+PIC16LF15356                 Midrange/1.8V Min MSB1st
+PIC16LF15375                 Midrange/1.8V Min MSB1st
+PIC16LF15376                 Midrange/1.8V Min MSB1st
+PIC16LF15385                 Midrange/1.8V Min MSB1st
+PIC16LF15386                 Midrange/1.8V Min MSB1st
+PIC16LF18424                 Midrange/1.8V Min MSB1st
+PIC16LF18425                 Midrange/1.8V Min MSB1st
+PIC16LF18426                 Midrange/1.8V Min MSB1st
+PIC16LF18444                 Midrange/1.8V Min MSB1st
+PIC16LF18445                 Midrange/1.8V Min MSB1st
+PIC16LF18446                 Midrange/1.8V Min MSB1st
+PIC16LF18455                 Midrange/1.8V Min MSB1st
+PIC16LF18456                 Midrange/1.8V Min MSB1st
+PIC16LF18854                 Midrange/1.8V Min MSB1st
+PIC16LF18855                 Midrange/1.8V Min MSB1st
+PIC16LF18856                 Midrange/1.8V Min MSB1st
+PIC16LF18857                 Midrange/1.8V Min MSB1st
+PIC16LF18875                 Midrange/1.8V Min MSB1st
+PIC16LF18876                 Midrange/1.8V Min MSB1st
+PIC16LF18877                 Midrange/1.8V Min MSB1st
+PIC16LF19155                 Midrange/1.8V Min MSB1st
+PIC16LF19156                 Midrange/1.8V Min MSB1st
+PIC16LF19175                 Midrange/1.8V Min MSB1st
+PIC16LF19176                 Midrange/1.8V Min MSB1st
+PIC16LF19185                 Midrange/1.8V Min MSB1st
+PIC16LF19186                 Midrange/1.8V Min MSB1st
+PIC16LF19195                 Midrange/1.8V Min MSB1st
+PIC16LF19196                 Midrange/1.8V Min MSB1st
+PIC16LF19197                 Midrange/1.8V Min MSB1st
+PIC16F753                    Midrange/1.8v SHV Min II
+PIC16HV753                   Midrange/1.8v SHV Min II
+PIC18F242                    PIC18/PIC18F
+PIC18F248                    PIC18/PIC18F
+PIC18F252                    PIC18/PIC18F
+PIC18F258                    PIC18/PIC18F
+PIC18F442                    PIC18/PIC18F
+PIC18F448                    PIC18/PIC18F
+PIC18F452                    PIC18/PIC18F
+PIC18F458                    PIC18/PIC18F
+PIC18F1220                   PIC18/PIC18F
+PIC18F1230                   PIC18/PIC18F
+PIC18F1320                   PIC18/PIC18F
+PIC18F1330                   PIC18/PIC18F
+PIC18F1330-ICD               PIC18/PIC18F
+PIC18F2220                   PIC18/PIC18F
+PIC18F2221                   PIC18/PIC18F
+PIC18F2320                   PIC18/PIC18F
+PIC18F2321                   PIC18/PIC18F
+PIC18F2331                   PIC18/PIC18F
+PIC18F2410                   PIC18/PIC18F
+PIC18F2420                   PIC18/PIC18F
+PIC18F2423                   PIC18/PIC18F
+PIC18F2431                   PIC18/PIC18F
+PIC18F2450                   PIC18/PIC18F
+PIC18F2455                   PIC18/PIC18F
+PIC18F2458                   PIC18/PIC18F
+PIC18F2480                   PIC18/PIC18F
+PIC18F2510                   PIC18/PIC18F
+PIC18F2515                   PIC18/PIC18F
+PIC18F2520                   PIC18/PIC18F
+PIC18F2523                   PIC18/PIC18F
+PIC18F2525                   PIC18/PIC18F
+PIC18F2550                   PIC18/PIC18F
+PIC18F2553                   PIC18/PIC18F
+PIC18F2580                   PIC18/PIC18F
+PIC18F2585                   PIC18/PIC18F
+PIC18F2610                   PIC18/PIC18F
+PIC18F2620                   PIC18/PIC18F
+PIC18F2680                   PIC18/PIC18F
+PIC18F2682                   PIC18/PIC18F
+PIC18F2685                   PIC18/PIC18F
+PIC18F4220                   PIC18/PIC18F
+PIC18F4221                   PIC18/PIC18F
+PIC18F4320                   PIC18/PIC18F
+PIC18F4321                   PIC18/PIC18F
+PIC18F4331                   PIC18/PIC18F
+PIC18F4410                   PIC18/PIC18F
+PIC18F4420                   PIC18/PIC18F
+PIC18F4423                   PIC18/PIC18F
+PIC18F4431                   PIC18/PIC18F
+PIC18F4450                   PIC18/PIC18F
+PIC18F4455                   PIC18/PIC18F
+PIC18F4458                   PIC18/PIC18F
+PIC18F4480                   PIC18/PIC18F
+PIC18F4510                   PIC18/PIC18F
+PIC18F4515                   PIC18/PIC18F
+PIC18F4520                   PIC18/PIC18F
+PIC18F4523                   PIC18/PIC18F
+PIC18F4525                   PIC18/PIC18F
+PIC18F4550                   PIC18/PIC18F
+PIC18F4553                   PIC18/PIC18F
+PIC18F4580                   PIC18/PIC18F
+PIC18F4585                   PIC18/PIC18F
+PIC18F4610                   PIC18/PIC18F
+PIC18F4620                   PIC18/PIC18F
+PIC18F4680                   PIC18/PIC18F
+PIC18F4682                   PIC18/PIC18F
+PIC18F4685                   PIC18/PIC18F
+PIC18F6310                   PIC18/PIC18F
+PIC18F6390                   PIC18/PIC18F
+PIC18F6393                   PIC18/PIC18F
+PIC18F6410                   PIC18/PIC18F
+PIC18F6490                   PIC18/PIC18F
+PIC18F6493                   PIC18/PIC18F
+PIC18F6520                   PIC18/PIC18F
+PIC18F6525                   PIC18/PIC18F
+PIC18F6527                   PIC18/PIC18F
+PIC18F6585                   PIC18/PIC18F
+PIC18F6620                   PIC18/PIC18F
+PIC18F6621                   PIC18/PIC18F
+PIC18F6622                   PIC18/PIC18F
+PIC18F6627                   PIC18/PIC18F
+PIC18F6628                   PIC18/PIC18F
+PIC18F6680                   PIC18/PIC18F
+PIC18F6720                   PIC18/PIC18F
+PIC18F6722                   PIC18/PIC18F
+PIC18F6723                   PIC18/PIC18F
+PIC18F8310                   PIC18/PIC18F
+PIC18F8390                   PIC18/PIC18F
+PIC18F8393                   PIC18/PIC18F
+PIC18F8410                   PIC18/PIC18F
+PIC18F8490                   PIC18/PIC18F
+PIC18F8493                   PIC18/PIC18F
+PIC18F8520                   PIC18/PIC18F
+PIC18F8525                   PIC18/PIC18F
+PIC18F8527                   PIC18/PIC18F
+PIC18F8585                   PIC18/PIC18F
+PIC18F8620                   PIC18/PIC18F
+PIC18F8621                   PIC18/PIC18F
+PIC18F8622                   PIC18/PIC18F
+PIC18F8627                   PIC18/PIC18F
+PIC18F8628                   PIC18/PIC18F
+PIC18F8680                   PIC18/PIC18F
+PIC18F8720                   PIC18/PIC18F
+PIC18F8722                   PIC18/PIC18F
+PIC18F8723                   PIC18/PIC18F
+PIC18LF6520                  PIC18/PIC18F
+PIC18LF8520                  PIC18/PIC18F
+PIC18F04Q40                  PIC18/PIC18F MSB1st
+PIC18F04Q41                  PIC18/PIC18F MSB1st
+PIC18F05Q40                  PIC18/PIC18F MSB1st
+PIC18F05Q41                  PIC18/PIC18F MSB1st
+PIC18F06Q40                  PIC18/PIC18F MSB1st
+PIC18F06Q41                  PIC18/PIC18F MSB1st
+PIC18F14Q40                  PIC18/PIC18F MSB1st
+PIC18F14Q41                  PIC18/PIC18F MSB1st
+PIC18F15Q40                  PIC18/PIC18F MSB1st
+PIC18F15Q41                  PIC18/PIC18F MSB1st
+PIC18F16Q40                  PIC18/PIC18F MSB1st
+PIC18F16Q41                  PIC18/PIC18F MSB1st
+PIC18F24K40                  PIC18/PIC18F MSB1st
+PIC18F24K42                  PIC18/PIC18F MSB1st
+PIC18F24Q10                  PIC18/PIC18F MSB1st
+PIC18F25K40                  PIC18/PIC18F MSB1st
+PIC18F25K42                  PIC18/PIC18F MSB1st
+PIC18F25K83                  PIC18/PIC18F MSB1st
+PIC18F25Q10                  PIC18/PIC18F MSB1st
+PIC18F25Q43                  PIC18/PIC18F MSB1st
+PIC18F26K40                  PIC18/PIC18F MSB1st
+PIC18F26K42                  PIC18/PIC18F MSB1st
+PIC18F26K83                  PIC18/PIC18F MSB1st
+PIC18F26Q10                  PIC18/PIC18F MSB1st
+PIC18F26Q43                  PIC18/PIC18F MSB1st
+PIC18F26Q83                  PIC18/PIC18F MSB1st
+PIC18F26Q84                  PIC18/PIC18F MSB1st
+PIC18F27K40                  PIC18/PIC18F MSB1st
+PIC18F27K42                  PIC18/PIC18F MSB1st
+PIC18F27Q10                  PIC18/PIC18F MSB1st
+PIC18F27Q43                  PIC18/PIC18F MSB1st
+PIC18F27Q83                  PIC18/PIC18F MSB1st
+PIC18F27Q84                  PIC18/PIC18F MSB1st
+PIC18F45K40                  PIC18/PIC18F MSB1st
+PIC18F45K42                  PIC18/PIC18F MSB1st
+PIC18F45Q10                  PIC18/PIC18F MSB1st
+PIC18F45Q43                  PIC18/PIC18F MSB1st
+PIC18F46K40                  PIC18/PIC18F MSB1st
+PIC18F46K42                  PIC18/PIC18F MSB1st
+PIC18F46Q10                  PIC18/PIC18F MSB1st
+PIC18F46Q43                  PIC18/PIC18F MSB1st
+PIC18F46Q83                  PIC18/PIC18F MSB1st
+PIC18F46Q84                  PIC18/PIC18F MSB1st
+PIC18F47K40                  PIC18/PIC18F MSB1st
+PIC18F47K42                  PIC18/PIC18F MSB1st
+PIC18F47Q10                  PIC18/PIC18F MSB1st
+PIC18F47Q43                  PIC18/PIC18F MSB1st
+PIC18F47Q83                  PIC18/PIC18F MSB1st
+PIC18F47Q84                  PIC18/PIC18F MSB1st
+PIC18F55K42                  PIC18/PIC18F MSB1st
+PIC18F55Q43                  PIC18/PIC18F MSB1st
+PIC18F56K42                  PIC18/PIC18F MSB1st
+PIC18F56Q43                  PIC18/PIC18F MSB1st
+PIC18F56Q83                  PIC18/PIC18F MSB1st
+PIC18F56Q84                  PIC18/PIC18F MSB1st
+PIC18F57K42                  PIC18/PIC18F MSB1st
+PIC18F57Q43                  PIC18/PIC18F MSB1st
+PIC18F57Q83                  PIC18/PIC18F MSB1st
+PIC18F57Q84                  PIC18/PIC18F MSB1st
+PIC18F65K40                  PIC18/PIC18F MSB1st
+PIC18F66K40                  PIC18/PIC18F MSB1st
+PIC18F67K40                  PIC18/PIC18F MSB1st
+PIC18LF24K40                 PIC18/PIC18F MSB1st
+PIC18LF24K42                 PIC18/PIC18F MSB1st
+PIC18LF25K40                 PIC18/PIC18F MSB1st
+PIC18LF25K42                 PIC18/PIC18F MSB1st
+PIC18LF25K83                 PIC18/PIC18F MSB1st
+PIC18LF26K40                 PIC18/PIC18F MSB1st
+PIC18LF26K42                 PIC18/PIC18F MSB1st
+PIC18LF26K83                 PIC18/PIC18F MSB1st
+PIC18LF27K40                 PIC18/PIC18F MSB1st
+PIC18LF27K42                 PIC18/PIC18F MSB1st
+PIC18LF45K40                 PIC18/PIC18F MSB1st
+PIC18LF45K42                 PIC18/PIC18F MSB1st
+PIC18LF46K40                 PIC18/PIC18F MSB1st
+PIC18LF46K42                 PIC18/PIC18F MSB1st
+PIC18LF47K40                 PIC18/PIC18F MSB1st
+PIC18LF47K42                 PIC18/PIC18F MSB1st
+PIC18LF55K42                 PIC18/PIC18F MSB1st
+PIC18LF56K42                 PIC18/PIC18F MSB1st
+PIC18LF57K42                 PIC18/PIC18F MSB1st
+PIC18LF65K40                 PIC18/PIC18F MSB1st
+PIC18LF66K40                 PIC18/PIC18F MSB1st
+PIC18LF67K40                 PIC18/PIC18F MSB1st
+PIC18F24J10                  PIC18/PIC18F_J_
+PIC18F24J11                  PIC18/PIC18F_J_
+PIC18F24J50                  PIC18/PIC18F_J_
+PIC18F25J10                  PIC18/PIC18F_J_
+PIC18F25J11                  PIC18/PIC18F_J_
+PIC18F25J50                  PIC18/PIC18F_J_
+PIC18F26J11                  PIC18/PIC18F_J_
+PIC18F26J13                  PIC18/PIC18F_J_
+PIC18F26J50                  PIC18/PIC18F_J_
+PIC18F26J53                  PIC18/PIC18F_J_
+PIC18F27J13                  PIC18/PIC18F_J_
+PIC18F27J53                  PIC18/PIC18F_J_
+PIC18F44J10                  PIC18/PIC18F_J_
+PIC18F44J11                  PIC18/PIC18F_J_
+PIC18F44J50                  PIC18/PIC18F_J_
+PIC18F45J10                  PIC18/PIC18F_J_
+PIC18F45J11                  PIC18/PIC18F_J_
+PIC18F45J50                  PIC18/PIC18F_J_
+PIC18F46J11                  PIC18/PIC18F_J_
+PIC18F46J13                  PIC18/PIC18F_J_
+PIC18F46J50                  PIC18/PIC18F_J_
+PIC18F46J53                  PIC18/PIC18F_J_
+PIC18F47J13                  PIC18/PIC18F_J_
+PIC18F47J53                  PIC18/PIC18F_J_
+PIC18F63J11                  PIC18/PIC18F_J_
+PIC18F63J90                  PIC18/PIC18F_J_
+PIC18F64J11                  PIC18/PIC18F_J_
+PIC18F64J90                  PIC18/PIC18F_J_
+PIC18F65J10                  PIC18/PIC18F_J_
+PIC18F65J11                  PIC18/PIC18F_J_
+PIC18F65J15                  PIC18/PIC18F_J_
+PIC18F65J50                  PIC18/PIC18F_J_
+PIC18F65J90                  PIC18/PIC18F_J_
+PIC18F65J94                  PIC18/PIC18F_J_
+PIC18F66J10                  PIC18/PIC18F_J_
+PIC18F66J11                  PIC18/PIC18F_J_
+PIC18F66J15                  PIC18/PIC18F_J_
+PIC18F66J16                  PIC18/PIC18F_J_
+PIC18F66J50                  PIC18/PIC18F_J_
+PIC18F66J55                  PIC18/PIC18F_J_
+PIC18F66J60                  PIC18/PIC18F_J_
+PIC18F66J65                  PIC18/PIC18F_J_
+PIC18F66J90                  PIC18/PIC18F_J_
+PIC18F66J93                  PIC18/PIC18F_J_
+PIC18F66J94                  PIC18/PIC18F_J_
+PIC18F67J10                  PIC18/PIC18F_J_
+PIC18F67J11                  PIC18/PIC18F_J_
+PIC18F67J50                  PIC18/PIC18F_J_
+PIC18F67J60                  PIC18/PIC18F_J_
+PIC18F67J90                  PIC18/PIC18F_J_
+PIC18F67J93                  PIC18/PIC18F_J_
+PIC18F67J94                  PIC18/PIC18F_J_
+PIC18F83J11                  PIC18/PIC18F_J_
+PIC18F83J90                  PIC18/PIC18F_J_
+PIC18F84J11                  PIC18/PIC18F_J_
+PIC18F84J90                  PIC18/PIC18F_J_
+PIC18F85J10                  PIC18/PIC18F_J_
+PIC18F85J11                  PIC18/PIC18F_J_
+PIC18F85J15                  PIC18/PIC18F_J_
+PIC18F85J50                  PIC18/PIC18F_J_
+PIC18F85J90                  PIC18/PIC18F_J_
+PIC18F85J94                  PIC18/PIC18F_J_
+PIC18F86J10                  PIC18/PIC18F_J_
+PIC18F86J11                  PIC18/PIC18F_J_
+PIC18F86J15                  PIC18/PIC18F_J_
+PIC18F86J16                  PIC18/PIC18F_J_
+PIC18F86J50                  PIC18/PIC18F_J_
+PIC18F86J55                  PIC18/PIC18F_J_
+PIC18F86J60                  PIC18/PIC18F_J_
+PIC18F86J65                  PIC18/PIC18F_J_
+PIC18F86J72                  PIC18/PIC18F_J_
+PIC18F86J90                  PIC18/PIC18F_J_
+PIC18F86J93                  PIC18/PIC18F_J_
+PIC18F86J94                  PIC18/PIC18F_J_
+PIC18F87J10                  PIC18/PIC18F_J_
+PIC18F87J11                  PIC18/PIC18F_J_
+PIC18F87J50                  PIC18/PIC18F_J_
+PIC18F87J60                  PIC18/PIC18F_J_
+PIC18F87J72                  PIC18/PIC18F_J_
+PIC18F87J90                  PIC18/PIC18F_J_
+PIC18F87J93                  PIC18/PIC18F_J_
+PIC18F87J94                  PIC18/PIC18F_J_
+PIC18F95J94                  PIC18/PIC18F_J_
+PIC18F96J60                  PIC18/PIC18F_J_
+PIC18F96J65                  PIC18/PIC18F_J_
+PIC18F96J94                  PIC18/PIC18F_J_
+PIC18F97J60                  PIC18/PIC18F_J_
+PIC18F97J94                  PIC18/PIC18F_J_
+PIC18LF24J10                 PIC18/PIC18F_J_
+PIC18LF24J11                 PIC18/PIC18F_J_
+PIC18LF24J50                 PIC18/PIC18F_J_
+PIC18LF25J10                 PIC18/PIC18F_J_
+PIC18LF25J11                 PIC18/PIC18F_J_
+PIC18LF25J50                 PIC18/PIC18F_J_
+PIC18LF26J11                 PIC18/PIC18F_J_
+PIC18LF26J13                 PIC18/PIC18F_J_
+PIC18LF26J50                 PIC18/PIC18F_J_
+PIC18LF26J53                 PIC18/PIC18F_J_
+PIC18LF27J13                 PIC18/PIC18F_J_
+PIC18LF27J53                 PIC18/PIC18F_J_
+PIC18LF44J10                 PIC18/PIC18F_J_
+PIC18LF44J11                 PIC18/PIC18F_J_
+PIC18LF44J50                 PIC18/PIC18F_J_
+PIC18LF45J10                 PIC18/PIC18F_J_
+PIC18LF45J11                 PIC18/PIC18F_J_
+PIC18LF45J50                 PIC18/PIC18F_J_
+PIC18LF46J11                 PIC18/PIC18F_J_
+PIC18LF46J13                 PIC18/PIC18F_J_
+PIC18LF46J50                 PIC18/PIC18F_J_
+PIC18LF46J53                 PIC18/PIC18F_J_
+PIC18LF47J13                 PIC18/PIC18F_J_
+PIC18LF47J53                 PIC18/PIC18F_J_
+PIC18F13K22                  PIC18/PIC18F_K_
+PIC18F13K50                  PIC18/PIC18F_K_
+PIC18F14K22                  PIC18/PIC18F_K_
+PIC18F14K50                  PIC18/PIC18F_K_
+PIC18F14K50-ICD              PIC18/PIC18F_K_
+PIC18F23K20                  PIC18/PIC18F_K_
+PIC18F23K22                  PIC18/PIC18F_K_
+PIC18F24K20                  PIC18/PIC18F_K_
+PIC18F24K22                  PIC18/PIC18F_K_
+PIC18F24K50                  PIC18/PIC18F_K_
+PIC18F25K20                  PIC18/PIC18F_K_
+PIC18F25K22                  PIC18/PIC18F_K_
+PIC18F25K50                  PIC18/PIC18F_K_
+PIC18F26K20                  PIC18/PIC18F_K_
+PIC18F26K22                  PIC18/PIC18F_K_
+PIC18F26K50                  PIC18/PIC18F_K_
+PIC18F43K20                  PIC18/PIC18F_K_
+PIC18F43K22                  PIC18/PIC18F_K_
+PIC18F44K20                  PIC18/PIC18F_K_
+PIC18F44K22                  PIC18/PIC18F_K_
+PIC18F45K20                  PIC18/PIC18F_K_
+PIC18F45K22                  PIC18/PIC18F_K_
+PIC18F45K50                  PIC18/PIC18F_K_
+PIC18F46K20                  PIC18/PIC18F_K_
+PIC18F46K22                  PIC18/PIC18F_K_
+PIC18F46K50                  PIC18/PIC18F_K_
+PIC18LF13K22                 PIC18/PIC18F_K_
+PIC18LF13K50                 PIC18/PIC18F_K_
+PIC18LF14K22                 PIC18/PIC18F_K_
+PIC18LF14K50                 PIC18/PIC18F_K_
+PIC18LF14K50-ICD             PIC18/PIC18F_K_
+PIC18LF23K22                 PIC18/PIC18F_K_
+PIC18LF24K22                 PIC18/PIC18F_K_
+PIC18LF24K50                 PIC18/PIC18F_K_
+PIC18LF25K22                 PIC18/PIC18F_K_
+PIC18LF25K50                 PIC18/PIC18F_K_
+PIC18LF26K22                 PIC18/PIC18F_K_
+PIC18LF26K50                 PIC18/PIC18F_K_
+PIC18LF43K22                 PIC18/PIC18F_K_
+PIC18LF44K22                 PIC18/PIC18F_K_
+PIC18LF45K22                 PIC18/PIC18F_K_
+PIC18LF45K50                 PIC18/PIC18F_K_
+PIC18LF46K22                 PIC18/PIC18F_K_
+PIC18LF46K50                 PIC18/PIC18F_K_
+PIC18F25K80                  PIC18/PIC18F_K90_K80_K22
+PIC18F26K80                  PIC18/PIC18F_K90_K80_K22
+PIC18F45K80                  PIC18/PIC18F_K90_K80_K22
+PIC18F46K80                  PIC18/PIC18F_K90_K80_K22
+PIC18F65K22                  PIC18/PIC18F_K90_K80_K22
+PIC18F65K80                  PIC18/PIC18F_K90_K80_K22
+PIC18F65K90                  PIC18/PIC18F_K90_K80_K22
+PIC18F66K22                  PIC18/PIC18F_K90_K80_K22
+PIC18F66K80                  PIC18/PIC18F_K90_K80_K22
+PIC18F66K90                  PIC18/PIC18F_K90_K80_K22
+PIC18F67K22                  PIC18/PIC18F_K90_K80_K22
+PIC18F67K90                  PIC18/PIC18F_K90_K80_K22
+PIC18F85K22                  PIC18/PIC18F_K90_K80_K22
+PIC18F85K90                  PIC18/PIC18F_K90_K80_K22
+PIC18F86K22                  PIC18/PIC18F_K90_K80_K22
+PIC18F86K90                  PIC18/PIC18F_K90_K80_K22
+PIC18F87K22                  PIC18/PIC18F_K90_K80_K22
+PIC18F87K90                  PIC18/PIC18F_K90_K80_K22
+PIC18LF25K80                 PIC18/PIC18F_K90_K80_K22
+PIC18LF26K80                 PIC18/PIC18F_K90_K80_K22
+PIC18LF45K80                 PIC18/PIC18F_K90_K80_K22
+PIC18LF46K80                 PIC18/PIC18F_K90_K80_K22
+PIC18LF65K80                 PIC18/PIC18F_K90_K80_K22
+PIC18LF66K80                 PIC18/PIC18F_K90_K80_K22
+PIC24F04KA200                Others/PIC24
+PIC24F04KA201                Others/PIC24
+PIC24F04KL100                Others/PIC24
+PIC24F04KL101                Others/PIC24
+PIC24F08KA101                Others/PIC24
+PIC24F08KA102                Others/PIC24
+PIC24F08KL200                Others/PIC24
+PIC24F08KL201                Others/PIC24
+PIC24F08KL301                Others/PIC24
+PIC24F08KL302                Others/PIC24
+PIC24F08KL401                Others/PIC24
+PIC24F08KL402                Others/PIC24
+PIC24F16KA101                Others/PIC24
+PIC24F16KA102                Others/PIC24
+PIC24F16KL401                Others/PIC24
+PIC24F16KL402                Others/PIC24
+PIC24F32KA301                Others/PIC24
+PIC24FJ16GA002               Others/PIC24
+PIC24FJ16GA004               Others/PIC24
+PIC24FJ32GA002               Others/PIC24
+PIC24FJ32GA004               Others/PIC24
+PIC24FJ32GA102               Others/PIC24
+PIC24FJ32GA104               Others/PIC24
+PIC24FJ32GB002               Others/PIC24
+PIC24FJ32GB004               Others/PIC24
+PIC24FJ48GA002               Others/PIC24
+PIC24FJ48GA004               Others/PIC24
+PIC24FJ64GA002               Others/PIC24
+PIC24FJ64GA004               Others/PIC24
+PIC24FJ64GA006               Others/PIC24
+PIC24FJ64GA008               Others/PIC24
+PIC24FJ64GA010               Others/PIC24
+PIC24FJ64GA102               Others/PIC24
+PIC24FJ64GA104               Others/PIC24
+PIC24FJ64GB002               Others/PIC24
+PIC24FJ64GB004               Others/PIC24
+PIC24FJ64GB106               Others/PIC24
+PIC24FJ64GB108               Others/PIC24
+PIC24FJ64GB110               Others/PIC24
+PIC24FJ96GA006               Others/PIC24
+PIC24FJ96GA008               Others/PIC24
+PIC24FJ96GA010               Others/PIC24
+PIC24FJ128GA006              Others/PIC24
+PIC24FJ128GA008              Others/PIC24
+PIC24FJ128GA010              Others/PIC24
+PIC24FJ128GA106              Others/PIC24
+PIC24FJ128GA108              Others/PIC24
+PIC24FJ128GA110              Others/PIC24
+PIC24FJ128GB106              Others/PIC24
+PIC24FJ128GB108              Others/PIC24
+PIC24FJ128GB110              Others/PIC24
+PIC24FJ192GA106              Others/PIC24
+PIC24FJ192GA108              Others/PIC24
+PIC24FJ192GA110              Others/PIC24
+PIC24FJ192GB106              Others/PIC24
+PIC24FJ192GB108              Others/PIC24
+PIC24FJ192GB110              Others/PIC24
+PIC24FJ256GA106              Others/PIC24
+PIC24FJ256GA108              Others/PIC24
+PIC24FJ256GA110              Others/PIC24
+PIC24FJ256GB106              Others/PIC24
+PIC24FJ256GB108              Others/PIC24
+PIC24FJ256GB110              Others/PIC24
+PIC24FV32KA301               Others/PIC24
+PIC24HJ12GP201               Others/PIC24
+PIC24HJ12GP202               Others/PIC24
+PIC24HJ16GP304               Others/PIC24
+PIC24HJ32GP202               Others/PIC24
+PIC24HJ32GP204               Others/PIC24
+PIC24HJ32GP302               Others/PIC24
+PIC24HJ32GP304               Others/PIC24
+PIC24HJ64GP202               Others/PIC24
+PIC24HJ64GP204               Others/PIC24
+PIC24HJ64GP206               Others/PIC24
+PIC24HJ64GP210               Others/PIC24
+PIC24HJ64GP502               Others/PIC24
+PIC24HJ64GP504               Others/PIC24
+PIC24HJ64GP506               Others/PIC24
+PIC24HJ64GP510               Others/PIC24
+PIC24HJ128GP202              Others/PIC24
+PIC24HJ128GP204              Others/PIC24
+PIC24HJ128GP206              Others/PIC24
+PIC24HJ128GP210              Others/PIC24
+PIC24HJ128GP306              Others/PIC24
+PIC24HJ128GP310              Others/PIC24
+PIC24HJ128GP502              Others/PIC24
+PIC24HJ128GP504              Others/PIC24
+PIC24HJ128GP506              Others/PIC24
+PIC24HJ128GP510              Others/PIC24
+PIC24HJ256GP206              Others/PIC24
+PIC24HJ256GP210              Others/PIC24
+PIC24HJ256GP610              Others/PIC24
+DSPIC33EP32GP502             Others/dsPIC33
+DSPIC33FJ06GS101             Others/dsPIC33
+DSPIC33FJ06GS102             Others/dsPIC33
+DSPIC33FJ06GS202             Others/dsPIC33
+DSPIC33FJ12GP201             Others/dsPIC33
+DSPIC33FJ12GP202             Others/dsPIC33
+DSPIC33FJ12MC201             Others/dsPIC33
+DSPIC33FJ12MC202             Others/dsPIC33
+DSPIC33FJ16GP304             Others/dsPIC33
+DSPIC33FJ16GS402             Others/dsPIC33
+DSPIC33FJ16GS404             Others/dsPIC33
+DSPIC33FJ16GS502             Others/dsPIC33
+DSPIC33FJ16GS504             Others/dsPIC33
+DSPIC33FJ16MC304             Others/dsPIC33
+DSPIC33FJ32GP202             Others/dsPIC33
+DSPIC33FJ32GP204             Others/dsPIC33
+DSPIC33FJ32GP302             Others/dsPIC33
+DSPIC33FJ32GP304             Others/dsPIC33
+DSPIC33FJ32MC202             Others/dsPIC33
+DSPIC33FJ32MC204             Others/dsPIC33
+DSPIC33FJ32MC302             Others/dsPIC33
+DSPIC33FJ32MC304             Others/dsPIC33
+DSPIC33FJ64GP202             Others/dsPIC33
+DSPIC33FJ64GP204             Others/dsPIC33
+DSPIC33FJ64GP206(A)          Others/dsPIC33
+DSPIC33FJ64GP306(A)          Others/dsPIC33
+DSPIC33FJ64GP310(A)          Others/dsPIC33
+DSPIC33FJ64GP706(A)          Others/dsPIC33
+DSPIC33FJ64GP708(A)          Others/dsPIC33
+DSPIC33FJ64GP710(A)          Others/dsPIC33
+DSPIC33FJ64GP802             Others/dsPIC33
+DSPIC33FJ64GP804             Others/dsPIC33
+DSPIC33FJ64GS608             Others/dsPIC33
+DSPIC33FJ64MC202             Others/dsPIC33
+DSPIC33FJ64MC204             Others/dsPIC33
+DSPIC33FJ64MC506             Others/dsPIC33
+DSPIC33FJ64MC508             Others/dsPIC33
+DSPIC33FJ64MC510             Others/dsPIC33
+DSPIC33FJ64MC706             Others/dsPIC33
+DSPIC33FJ64MC710             Others/dsPIC33
+DSPIC33FJ64MC802             Others/dsPIC33
+DSPIC33FJ64MC804             Others/dsPIC33
+DSPIC33FJ128GP202            Others/dsPIC33
+DSPIC33FJ128GP204            Others/dsPIC33
+DSPIC33FJ128GP206(A)         Others/dsPIC33
+DSPIC33FJ128GP306(A)         Others/dsPIC33
+DSPIC33FJ128GP310(A)         Others/dsPIC33
+DSPIC33FJ128GP706(A)         Others/dsPIC33
+DSPIC33FJ128GP708(A)         Others/dsPIC33
+DSPIC33FJ128GP710(A)         Others/dsPIC33
+DSPIC33FJ128GP802            Others/dsPIC33
+DSPIC33FJ128GP804            Others/dsPIC33
+DSPIC33FJ128MC202            Others/dsPIC33
+DSPIC33FJ128MC204            Others/dsPIC33
+DSPIC33FJ128MC506            Others/dsPIC33
+DSPIC33FJ128MC510            Others/dsPIC33
+DSPIC33FJ128MC706            Others/dsPIC33
+DSPIC33FJ128MC708            Others/dsPIC33
+DSPIC33FJ128MC710            Others/dsPIC33
+DSPIC33FJ128MC802            Others/dsPIC33
+DSPIC33FJ128MC804            Others/dsPIC33
+DSPIC33FJ256GP506            Others/dsPIC33
+DSPIC33FJ256GP506A           Others/dsPIC33
+DSPIC33FJ256GP510            Others/dsPIC33
+DSPIC33FJ256GP510A           Others/dsPIC33
+DSPIC33FJ256GP710            Others/dsPIC33
+DSPIC33FJ256GP710A           Others/dsPIC33
+DSPIC33FJ256MC510            Others/dsPIC33
+DSPIC33FJ256MC710            Others/dsPIC33
+DSPIC30F2010                 Others/dsPIC30
+DSPIC30F2011                 Others/dsPIC30
+DSPIC30F2012                 Others/dsPIC30
+DSPIC30F3010                 Others/dsPIC30
+DSPIC30F3011                 Others/dsPIC30
+DSPIC30F3012                 Others/dsPIC30
+DSPIC30F3013                 Others/dsPIC30
+DSPIC30F3014                 Others/dsPIC30
+DSPIC30F4011                 Others/dsPIC30
+DSPIC30F4012                 Others/dsPIC30
+DSPIC30F4013                 Others/dsPIC30
+DSPIC30F5011                 Others/dsPIC30
+DSPIC30F5013                 Others/dsPIC30
+DSPIC30F5015                 Others/dsPIC30
+DSPIC30F5016                 Others/dsPIC30
+DSPIC30F6010A                Others/dsPIC30
+DSPIC30F6011A                Others/dsPIC30
+DSPIC30F6012A                Others/dsPIC30
+DSPIC30F6013A                Others/dsPIC30
+DSPIC30F6014A                Others/dsPIC30
+DSPIC30F6015                 Others/dsPIC30
+DSPIC30F1010                 Others/dsPIC30 SMPS
+DSPIC30F2020                 Others/dsPIC30 SMPS
+DSPIC30F2023                 Others/dsPIC30 SMPS
+HCS200                       Others/KEELOQ?? HCS
+HCS201                       Others/KEELOQ?? HCS
+HCS300                       Others/KEELOQ?? HCS
+HCS301                       Others/KEELOQ?? HCS
+HCS320                       Others/KEELOQ?? HCS
+HCS360                       Others/KEELOQ?? HCS
+HCS361                       Others/KEELOQ?? HCS
+HCS362                       Others/KEELOQ?? HCS
+MCP25020                     Others/MCP250xx
+MCP25025                     Others/MCP250xx
+MCP25050                     Others/MCP250xx
+MCP25055                     Others/MCP250xx
+PIC32MX110F016B              PIC32
+PIC32MX110F016C              PIC32
+PIC32MX110F016D              PIC32
+PIC32MX120F032B              PIC32
+PIC32MX120F032C              PIC32
+PIC32MX120F032D              PIC32
+PIC32MX130F064B              PIC32
+PIC32MX130F064C              PIC32
+PIC32MX130F064D              PIC32
+PIC32MX130F256B              PIC32
+PIC32MX130F256D              PIC32
+PIC32MX150F128B              PIC32
+PIC32MX150F128C              PIC32
+PIC32MX150F128D              PIC32
+PIC32MX170F256B              PIC32
+PIC32MX170F256D              PIC32
+PIC32MX210F016B              PIC32
+PIC32MX210F016C              PIC32
+PIC32MX210F016D              PIC32
+PIC32MX220F032B              PIC32
+PIC32MX220F032C              PIC32
+PIC32MX220F032D              PIC32
+PIC32MX230F064B              PIC32
+PIC32MX230F064C              PIC32
+PIC32MX230F064D              PIC32
+PIC32MX230F256B              PIC32
+PIC32MX230F256D              PIC32
+PIC32MX250F128B              PIC32
+PIC32MX250F128C              PIC32
+PIC32MX250F128D              PIC32
+PIC32MX270F256B              PIC32
+PIC32MX270F256D              PIC32
+PIC32MX270F256DB             PIC32
+PIC32MX320F032H              PIC32
+PIC32MX320F064H              PIC32
+PIC32MX320F128H              PIC32
+PIC32MX320F128L              PIC32
+PIC32MX340F128H              PIC32
+PIC32MX340F128L              PIC32
+PIC32MX340F256H              PIC32
+PIC32MX340F512H              PIC32
+PIC32MX360F256L              PIC32
+PIC32MX360F512L              PIC32
+PIC32MX420F032H              PIC32
+PIC32MX440F128H              PIC32
+PIC32MX440F128L              PIC32
+PIC32MX440F256H              PIC32
+PIC32MX440F512H              PIC32
+PIC32MX460F256L              PIC32
+PIC32MX460F512L              PIC32
+11LC010                      EEPROMS/11LC
+11LC020                      EEPROMS/11LC
+11LC040                      EEPROMS/11LC
+11LC080                      EEPROMS/11LC
+11LC160                      EEPROMS/11LC
+24LC01B                      EEPROMS/24xx
+24LC02B                      EEPROMS/24xx
+24LC04B                      EEPROMS/24xx
+24LC08B                      EEPROMS/24xx
+24LC16B                      EEPROMS/24xx
+24LC32A                      EEPROMS/24xx
+24XX00                       EEPROMS/24xx
+24XX01                       EEPROMS/24xx
+24XX02                       EEPROMS/24xx
+24XX04                       EEPROMS/24xx
+24XX08                       EEPROMS/24xx
+24XX16                       EEPROMS/24xx
+24XX32                       EEPROMS/24xx
+24XX64                       EEPROMS/24xx
+24XX128                      EEPROMS/24xx
+24XX256                      EEPROMS/24xx
+24XX512                      EEPROMS/24xx
+24XX1025                     EEPROMS/24xx
+24XX1026                     EEPROMS/24xx
++FL127S                      EEPROMS/25LC
+25LC010A                     EEPROMS/25LC
+25LC020A                     EEPROMS/25LC
+25LC040A                     EEPROMS/25LC
+25LC080A                     EEPROMS/25LC
+25LC080B                     EEPROMS/25LC
+25LC128                      EEPROMS/25LC
+25LC160A                     EEPROMS/25LC
+25LC160B                     EEPROMS/25LC
+25LC256                      EEPROMS/25LC
+25LC320A                     EEPROMS/25LC
+25LC512                      EEPROMS/25LC
+25LC640A                     EEPROMS/25LC
+25LC1024                     EEPROMS/25LC
+M25P10                       EEPROMS/25LC
+M25P16                       EEPROMS/25LC
+M25P20                       EEPROMS/25LC
+M25P32                       EEPROMS/25LC
+M25P40                       EEPROMS/25LC
+M25P64                       EEPROMS/25LC
+M25P80                       EEPROMS/25LC
+93LC46A (C X8)               EEPROMS/93LCxA,C
+93LC56A (C X8)               EEPROMS/93LCxA,C
+93LC66A (C X8)               EEPROMS/93LCxA,C
+93LC76A (C X8)               EEPROMS/93LCxA,C
+93LC86A (C X8)               EEPROMS/93LCxA,C
+93LC46B (C X16)              EEPROMS/93LCxB,C
+93LC56B (C X16)              EEPROMS/93LCxB,C
+93LC66B (C X16)              EEPROMS/93LCxB,C
+93LC76B (C X16)              EEPROMS/93LCxB,C
+93LC86B (C X16)              EEPROMS/93LCxB,C
