@@ -1,0 +1,2 @@
+#!/bin/sh
+mono /usr/share/pk2/PICkit2-Device-File-Editor.exe "$@" 
