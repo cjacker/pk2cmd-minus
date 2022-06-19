@@ -12,6 +12,7 @@
 # or
 #    make mac
 #
+DESTDIR=
 
 APP=pk2cmd
 CC=g++
@@ -117,11 +118,10 @@ strnatcmp.o: strnatcmp.c strnatcmp.h stdafx.h
 	$(CC) $(CFLAGS) -x c -o $@  -c $<
 
 install: 
-	mkdir -p /usr/share/pk2
-	cp $(APP) /usr/local/bin
-	chmod u+s /usr/local/bin/$(APP)
-	cp PK2DeviceFile.dat /usr/share/pk2/PK2DeviceFile.dat
-#	cp ../release/PK2DeviceFile.dat /usr/local/bin/PK2DeviceFile.dat
+	mkdir -p $(DESTDIR)/usr/share/pk2
+	mkdir -p $(DESTDIR)/usr/bin
+	install -m0755 $(APP) $(DESTDIR)/usr/bin
+	install -m0644 PK2DeviceFile.dat $(DESTDIR)/usr/share/pk2
 
 clean:
 	rm -f *.o
