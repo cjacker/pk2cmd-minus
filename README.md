@@ -2,6 +2,8 @@
 
 This repo is not my work, it's a mirror of http://kair.us/projects/pickitminus/.
 
+The version of pk2cmd-minus is 1.23.0, the version number is updated from the version of official 1.20 and 1.21-rc1 sources.
+
 # Features
 - Supports nearly all, if not all, 8-bit PIC microcontrollers
 - Supports PICkit2 and PICkit3 programmers
@@ -26,5 +28,19 @@ Later I made a new version, based on PICkit3 original software. I modified it to
 The latest addition is command line tool, PK2CMDminus. It is based on the last unofficial version from [MichaelS / Microchip](https://www.microchip.com/forums/tm.aspx?m=540021), and updates by [Miklós Márton](https://github.com/martonmiklos/pk2cmd) to add support for PICkit3. The support for SPI-type MSB1st -family PICs is based on work by bequest333. The PK2CMD Windows version is 32-bit statically linked application targeted for XP, so it should run on Windows versions from XP to 10. It compiles and works fine on Linux and macOS as well. I have tested it on Ubuntu 16.04 and OSX 10.13 High Sierra. On Linux, you need to install libusb-dev with apt-get, or alternatively download libusb-0.1.12 from sourceforge. There are also Linux prebuilt binaries in AppImage format, which should run on many distributions. For Mac, there is also compiled executable available for download below. It is compiled on OSX 10.13, I don't know if it works with other versions.
 
 If you run pk2cmd on Linux and get a message 'PICkit2 not found', quite probable reason is that normal user doesn't have proper rights to the USB device. A simple solution is to run pk2cmd as root, but this is a bit ugly. On systems with udev, you can use [this udev rules file](https://raw.githubusercontent.com/cjacker/pk2cmd-minus/main/60-pickit.rules) which gives appropriate rights for PICkit2 and PICkit3. Just copy this file to /etc/udev/rules.d/ and restart udev (or restart PC). You will also need to re-plug the PICkit.
+
+# Installation
+I made some improvement to pk2cmd-minus to support 'make install' directly
+
+```
+git clone https://github.com/cjacker/pk2cmd-minus
+cd pk2cmd-minus
+make
+sudo make install
+```
+
+Then you should have 'pk2cmd' and 'pk2-device-file-editor' in your PATH, other resources will be installed to proper dir automatically.
+
+To run 'pk2-device-file-editor', you should have mono and mono-basic installed.
 
 
