@@ -1,8 +1,10 @@
-# pk2cmd-minus is an improved pk2cmd to support PICKIT2/3 and nearly all 8-bit PIC microcontrollers
+# pk2cmd-minus 
 
-This repo is not my work, it's a mirror of http://kair.us/projects/pickitminus/.
+pk2cmd with improvement to support PICKIT2/3 and nearly all 8-bit PIC microcontrollers
 
-The version of pk2cmd-minus is 1.23.0, the version number is updated from the version of official 1.20 and 1.21-rc1 sources.
+NOTE: this repo is not my work, it's a mirror of http://kair.us/projects/pickitminus/.
+
+The version of pk2cmd-minus is '1.23.0', the version number is updated from the version of MicroChip official 1.20 and 1.21-rc1 sources.
 
 # Features
 - Supports nearly all, if not all, 8-bit PIC microcontrollers
@@ -30,6 +32,7 @@ The latest addition is command line tool, PK2CMDminus. It is based on the last u
 If you run pk2cmd on Linux and get a message 'PICkit2 not found', quite probable reason is that normal user doesn't have proper rights to the USB device. A simple solution is to run pk2cmd as root, but this is a bit ugly. On systems with udev, you can use [this udev rules file](https://raw.githubusercontent.com/cjacker/pk2cmd-minus/main/60-pickit.rules) which gives appropriate rights for PICkit2 and PICkit3. Just copy this file to /etc/udev/rules.d/ and restart udev (or restart PC). You will also need to re-plug the PICkit.
 
 # Installation
+
 I made some improvement to pk2cmd-minus to support 'make install' directly
 
 ```
