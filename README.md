@@ -2,9 +2,9 @@
 
 pk2cmd with improvement to support PICKIT2/3 and nearly all 8-bit PIC microcontrollers
 
-NOTE: this repo is not my work, it's a mirror of http://kair.us/projects/pickitminus/.
+**NOTE**: this project is not my work, it's a mirror of http://kair.us/projects/pickitminus/.
 
-The version of pk2cmd-minus is '1.23.0', the version number is updated from the version of MicroChip official 1.20 and 1.21-rc1 sources.
+The version of pk2cmd-minus is '1.23.0', it seems the version number is updated from the version of MicroChip official 1.20 and 1.21-rc1 sources.
 
 # Features
 - Supports nearly all, if not all, 8-bit PIC microcontrollers
