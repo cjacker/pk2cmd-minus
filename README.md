@@ -17,7 +17,9 @@ The version of pk2cmd-minus is '1.23.0', it seems the version number is updated 
 - Command line software works on Windows XP, 7, 10, Linux and MacOS
 - Retains all the good features from original Microchip PICkit2 and PICkit3 stand-alone software
 
-# Background (copy from http://kair.us/projects/pickitminus/)
+# Background 
+
+(copy from http://kair.us/projects/pickitminus/)
 
 >Microchip has obsoleted the PICkit2 programmer over ten years ago. It had very easy to use and reliable stand-alone software, but Microchip stopped it's development already in 2009. Luckily, the PICkit2 has always been open source, so anyone can make modifications and improvements are share them with others. Also, dougy83 has created a device file editor which can be used to add support for new parts for the PICkit2 software. Using this editor, people have added support for new microcontroller types. However, recent PIC controllers use SPI-like programming protocol. It isn't possible to support that only by adding new scripts using the [device file editor](https://sites.google.com/site/pk2devicefileeditor/). Either the PICkit2 software or firmware must be modified.
 
