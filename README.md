@@ -48,4 +48,84 @@ Then you should have 'pk2cmd' and 'pk2-device-file-editor' in your PATH, other r
 
 To run 'pk2-device-file-editor', you should have mono and mono-basic installed.
 
+# Usage
+
+To update PICKIT2 firmware:
+```
+$ pk2cmd -D/usr/share/pk2/PK2V023200.hex
+Downloading OS...
+Verifying new OS...
+Resetting PICkit 2...
+OS Update Successful.
+
+Operation Succeeded
+```
+NOTE there is no 'blank' between '-D' and '/usr/share/pk2/PK2V023200.hex', 
+
+And this firmware is for PICKIT2, you need to find corresponding firmware for PICKIT3 in '/usr/share/pk2' dir.
+
+
+To detect target device:
+```
+$ pk2cmd -P
+Auto-Detect: Found part PIC16F690.
+
+Operation Succeeded
+```
+
+To erase target device:
+```
+$ pk2cmd -P PIC16F690 -X -E
+Erasing Device...
+
+Operation Succeeded
+```
+
+Note that the device name from the auto-detection is now placed after the -P argument. Two new arguments is supplied now. -X tells the PICKit2 to "Use VPP first Program Entry Method", you may omit it. -E tells pk2cmd to erase the connected PIC.
+
+To program target device:
+```
+$ pk2cmd -PPIC16F690 -M -F blink.hex
+PICkit Program Report
+21-6-2022, 11:39:46
+Device Type: PIC16F690
+
+Program Succeeded.
+
+Operation Succeeded
+```
+
+Two new arguments again. -M tells pk2cmd to actually program the PIC. -F tells pk2cmd which file to use. The -M argument can actually also be either -MP, -ME, -MI or -MC to program only Program memory, EEPROM, ID memory or Configuration memory respectively but for most cases you will program the entire PIC using -M.
+
+To verify:
+```
+$ pk2cmd -P PIC16F690 -Y -F blink.hex
+PICkit 2 Verify Report
+21-6-2022, 11:40:58
+Device Type: PIC16F690
+
+Verify Succeeded.
+
+Operation Succeeded
+```
+The argument -Y tells pk2cmd to verify the PIC's memory with the HEX file given by -F. Again the -Y argument can address different areas just as the -M argument by setting either -YP, -YE, -YI or -YC to verify a specific region only.
+
+
+**By default, PICKIT2 doesn't supply power to target device, you can turn on the 'VDD' as:**
+
+To power on target device
+```
+$ pk2cmd -P PIC16F690 -T
+
+Operation Succeeded
+```
+
+To power off
+```
+$ pk2cmd -P PIC16F690
+
+Operation Succeeded
+```
+
+For more usage of 'pk2cmd', try run 'pk2cmd' command directly to find help message.
 
