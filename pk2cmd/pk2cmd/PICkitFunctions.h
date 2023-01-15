@@ -109,7 +109,7 @@ class CPICkitFunctions
 		  void SetProgrammingSpeedDefault(unsigned char speed);
 		  bool FamilyIsPIC24H(void);
 		  bool FamilyIsdsPIC33F(void);
-		  bool FamilyIsPIC24F(void);
+		  bool FamilyIsPIC24FJ(void);
 		  void SetTimerFunctions(bool usePercent, bool useNewlines);
 		  void disableBlankSkipping(void);
 		  bool SearchDevice(int familyIndex);

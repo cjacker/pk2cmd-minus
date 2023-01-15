@@ -278,7 +278,7 @@ unsigned int CPICkitFunctions::GetDeviceRevision(void)
 
 bool CPICkitFunctions::FamilyIsKeeloq(void)
 {
-	int x = _tcsncmp(DevFile.Families[ActiveFamily].FamilyName, "KEELOQ", 6);
+	int x = _tcsncmp(DevFile.Families[ActiveFamily].FamilyName, "Others/KEELOQ", 13);
 	if (x == 0)
 		return true;
 	return false;
@@ -287,7 +287,7 @@ bool CPICkitFunctions::FamilyIsKeeloq(void)
 
 bool CPICkitFunctions::FamilyIsEEPROM(void)
 {  
-	int x = _tcsncmp(DevFile.Families[ActiveFamily].FamilyName, "EEPROM", 6);
+	int x = _tcsncmp(DevFile.Families[ActiveFamily].FamilyName, "Others/EEPROM", 13);
 	if (x == 0)
 		return true;
 	return false;
@@ -295,7 +295,7 @@ bool CPICkitFunctions::FamilyIsEEPROM(void)
 
 bool CPICkitFunctions::FamilyIsMCP(void)
 {  
-	int x = _tcsncmp(DevFile.Families[ActiveFamily].FamilyName, "MCP", 3);
+	int x = _tcsncmp(DevFile.Families[ActiveFamily].FamilyName, "Others/MCP", 10);
 	if (x == 0)
 		return true;
 	return false;
@@ -463,15 +463,18 @@ bool CPICkitFunctions::WriteDevice(bool progmem, bool eemem, bool uidmem, bool c
 
 				}
 				// download data
-                if (!wholeChunkIsBlank || DevFile.PartsList[ActivePart].ProgMemAddrSetScript == 0 || skipBlankSections == false)     // JAKA - Upload data only if it's not completely blank
+                if (!wholeChunkIsBlank || DevFile.PartsList[ActivePart].ProgMemAddrSetScript == 0 || skipBlankSections == false || FamilyIsMCP())     // JAKA - Upload data only if it's not completely blank
                 {
-                    if (DevFile.PartsList[ActivePart].ProgMemAddrSetScript != 0 && skipBlankSections == true)
+                    if (DevFile.PartsList[ActivePart].ProgMemAddrSetScript != 0 && skipBlankSections == true && !FamilyIsMCP())
                         // && (DevFile.PartsList[ActivePart].ProgMemAddrBytes != 0))
                     { // if prog mem address set script exists for this part
                         if (previousChunkWasBlank)
                         {   // set PC if prevoius chunk was not written
                             DownloadAddress3((wordsWritten - wordsPerLoop) * DevFile.Families[ActiveFamily].AddressIncrement);
-                            RunScript(SCR_PROGMEM_ADDRSET, 1);
+                            if (DevFile.Families[ActiveFamily].BlankValue == 0xFFFFFF)
+                                RunScript(SCR_PROGMEM_WR_PREP, 1);	// PIC24 (maybe others?) need to use WR_PREP when writing, and ADDRSET when reading 
+                            else
+                                RunScript(SCR_PROGMEM_ADDRSET, 1);	// Many PICs can use ADDRSET also when writing.
                         }
                     }
                     if (FamilyIsKeeloq())
@@ -1710,16 +1713,18 @@ bool CPICkitFunctions::ReadDevice(char function, bool progmem, bool eemem, bool 
                     || DevFile.PartsList[ActivePart].ProgMemAddrSetScript == 0
                     || skipBlankSections == false
                     || function == READ_MEM
-                    || function == BLANK_CHECK)     // JAKA - Upload data only if it's not completely blank
+                    || function == BLANK_CHECK
+                    || FamilyIsMCP())     // JAKA - Verify data only if it's not completely blank
                 {
                     if (DevFile.PartsList[ActivePart].ProgMemAddrSetScript != 0
                         && skipBlankSections == true
                         && function != READ_MEM
-                        && function != BLANK_CHECK)
+                        && function != BLANK_CHECK
+                        && !FamilyIsMCP())
                         // && (DevFile.PartsList[ActivePart].ProgMemAddrBytes != 0))
                     { // if prog mem address set script exists for this part
                         if (previousChunkWasBlank)
-                        {   // set PC if prevoius chunk was not written
+                        {   // set PC if prevoius chunk was not verified
                             DownloadAddress3(wordsRead * DevFile.Families[ActiveFamily].AddressIncrement);
                             RunScript(SCR_PROGMEM_ADDRSET, 1);
                         }
@@ -3615,9 +3620,9 @@ bool CPICkitFunctions::FamilyIsdsPIC33F(void)
 			return false;
         }  
 
-bool CPICkitFunctions::FamilyIsPIC24F(void)
+bool CPICkitFunctions::FamilyIsPIC24FJ(void)
         {
-			int x = _tcsncmp(DevFile.PartsList[ActivePart].PartName, "PIC24F", 6);
+			int x = _tcsncmp(DevFile.PartsList[ActivePart].PartName, "PIC24FJ", 7);
 			if (x == 0)
 				return true;
 			return false;
@@ -4204,9 +4209,10 @@ bool CPICkitFunctions::PE_DownloadAndConnect(void)
     printf("Downloading Programming Executive...\n");
 	fflush(stdout);
     
-    if (_tcsncmp(DevFile.PartsList[ActivePart].PartName, "TCHIP-USB-MX2", 13) == 0 ||
-        _tcsncmp(DevFile.PartsList[ActivePart].PartName, "PIC32MX2", 8) == 0 ||
-        _tcsncmp(DevFile.PartsList[ActivePart].PartName, "PIC32MX1", 8) == 0)
+    //if (_tcsncmp(DevFile.PartsList[ActivePart].PartName, "TCHIP-USB-MX2", 13) == 0 ||
+    //    _tcsncmp(DevFile.PartsList[ActivePart].PartName, "PIC32MX2", 8) == 0 ||
+    //    _tcsncmp(DevFile.PartsList[ActivePart].PartName, "PIC32MX1", 8) == 0)
+    if ((DevFile.PartsList[ActivePart].ProgMemPanelBufs & 0xf0) == 0x20)
     {
         CPIC32PE::PIC32_PE = &CPIC32PE::PIC32_PE_RS32[0];
         CPIC32PE::pe_Version = K_PIC32_PE_RS32_VERSION;
@@ -4486,9 +4492,10 @@ bool CPICkitFunctions::P32Write(bool progmem, bool uidmem, bool cfgmem)
     // MX1xx, MX2xx: (32 words) per memory row - one download per row.
     // timijk
     int wordsPerLoop;
-    if (_tcsncmp(DevFile.PartsList[ActivePart].PartName, "TCHIP-USB-MX2", 13) == 0 ||
-        _tcsncmp(DevFile.PartsList[ActivePart].PartName, "PIC32MX2", 8) == 0 ||
-        _tcsncmp(DevFile.PartsList[ActivePart].PartName, "PIC32MX1", 8) == 0)
+    //if (_tcsncmp(DevFile.PartsList[ActivePart].PartName, "TCHIP-USB-MX2", 13) == 0 ||
+    //    _tcsncmp(DevFile.PartsList[ActivePart].PartName, "PIC32MX2", 8) == 0 ||
+    //    _tcsncmp(DevFile.PartsList[ActivePart].PartName, "PIC32MX1", 8) == 0)
+    if ((DevFile.PartsList[ActivePart].ProgMemPanelBufs & 0xf0) == 0x20)
     {
         wordsPerLoop = 32;
     }
@@ -4550,9 +4557,10 @@ bool CPICkitFunctions::P32Write(bool progmem, bool uidmem, bool cfgmem)
 		// Write 512 bytes (128 words) per memory row - so need 2 downloads per row.
          // MX1xx, MX2xx: (32 words) per memory row - one download per row.
             // timijk
-        if (_tcsncmp(DevFile.PartsList[ActivePart].PartName, "TCHIP-USB-MX2", 13) == 0 ||
-            _tcsncmp(DevFile.PartsList[ActivePart].PartName, "PIC32MX2", 8) == 0 ||
-            _tcsncmp(DevFile.PartsList[ActivePart].PartName, "PIC32MX1", 8) == 0)
+        //if (_tcsncmp(DevFile.PartsList[ActivePart].PartName, "TCHIP-USB-MX2", 13) == 0 ||
+        //    _tcsncmp(DevFile.PartsList[ActivePart].PartName, "PIC32MX2", 8) == 0 ||
+        //    _tcsncmp(DevFile.PartsList[ActivePart].PartName, "PIC32MX1", 8) == 0)
+        if ((DevFile.PartsList[ActivePart].ProgMemPanelBufs & 0xf0) == 0x20)
         {
             wordsPerLoop = 32;
         }
@@ -4605,13 +4613,11 @@ bool CPICkitFunctions::P32Write(bool progmem, bool uidmem, bool cfgmem)
 	}
 
     //////////////////////////////////////////////
-    // User ID and config - different handling for PIC32MX1xx/2xx and PIC32MX3xx/4xx
+    // User ID and config - different handling for PIC32MX original' family where UserIDAddr
+    // doesn't contain any config bits.
     /////////////////////////////////////////////////
 
     if (DevFile.PartsList[ActivePart].ConfigAddr == DevFile.PartsList[ActivePart].UserIDAddr)
-    //if (_tcsncmp(DevFile.PartsList[ActivePart].PartName, "TCHIP-USB-MX2", 13) == 0 ||
-    //    _tcsncmp(DevFile.PartsList[ActivePart].PartName, "PIC32MX2", 8) == 0 ||
-    //    _tcsncmp(DevFile.PartsList[ActivePart].PartName, "PIC32MX1", 8) == 0)
     {
         // PIC32MX 1xx/2xx
         /*
@@ -6865,7 +6871,7 @@ bool CPICkitFunctions::PE24FVerify(bool writeVerify, int lastLocation, bool PECo
 
 bool CPICkitFunctions::useProgExec24F(void)
         {
-            if (FamilyIsPIC24F())
+            if (FamilyIsPIC24FJ())
             {
                 if (DevFile.PartsList[ActivePart].ProgramMem >= 4096)
                 // don't use PE on the smallest parts.

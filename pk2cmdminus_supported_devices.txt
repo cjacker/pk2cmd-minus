@@ -6,8 +6,8 @@ Device file and software updates available from
 http://kair.us/projects/pickit2minus/index.html
 
 
-Device File Version:   2.63.226
-Number of devices = 1066
+Device File Version:   2.63.229
+Number of devices = 1203
 
 Device Name                  Device Family
 -----------                  -------------
@@ -325,6 +325,20 @@ PIC16F15375                  Midrange/1.8V Min MSB1st
 PIC16F15376                  Midrange/1.8V Min MSB1st
 PIC16F15385                  Midrange/1.8V Min MSB1st
 PIC16F15386                  Midrange/1.8V Min MSB1st
+PIC16F17114                  Midrange/1.8V Min MSB1st
+PIC16F17115                  Midrange/1.8V Min MSB1st
+PIC16F17124                  Midrange/1.8V Min MSB1st
+PIC16F17125                  Midrange/1.8V Min MSB1st
+PIC16F17126                  Midrange/1.8V Min MSB1st
+PIC16F17144                  Midrange/1.8V Min MSB1st
+PIC16F17145                  Midrange/1.8V Min MSB1st
+PIC16F17146                  Midrange/1.8V Min MSB1st
+PIC16F17154                  Midrange/1.8V Min MSB1st
+PIC16F17155                  Midrange/1.8V Min MSB1st
+PIC16F17156                  Midrange/1.8V Min MSB1st
+PIC16F17174                  Midrange/1.8V Min MSB1st
+PIC16F17175                  Midrange/1.8V Min MSB1st
+PIC16F17176                  Midrange/1.8V Min MSB1st
 PIC16F18013                  Midrange/1.8V Min MSB1st
 PIC16F18014                  Midrange/1.8V Min MSB1st
 PIC16F18015                  Midrange/1.8V Min MSB1st
@@ -341,6 +355,20 @@ PIC16F18056                  Midrange/1.8V Min MSB1st
 PIC16F18074                  Midrange/1.8V Min MSB1st
 PIC16F18075                  Midrange/1.8V Min MSB1st
 PIC16F18076                  Midrange/1.8V Min MSB1st
+PIC16F18114                  Midrange/1.8V Min MSB1st
+PIC16F18115                  Midrange/1.8V Min MSB1st
+PIC16F18124                  Midrange/1.8V Min MSB1st
+PIC16F18125                  Midrange/1.8V Min MSB1st
+PIC16F18126                  Midrange/1.8V Min MSB1st
+PIC16F18144                  Midrange/1.8V Min MSB1st
+PIC16F18145                  Midrange/1.8V Min MSB1st
+PIC16F18146                  Midrange/1.8V Min MSB1st
+PIC16F18154                  Midrange/1.8V Min MSB1st
+PIC16F18155                  Midrange/1.8V Min MSB1st
+PIC16F18156                  Midrange/1.8V Min MSB1st
+PIC16F18174                  Midrange/1.8V Min MSB1st
+PIC16F18175                  Midrange/1.8V Min MSB1st
+PIC16F18176                  Midrange/1.8V Min MSB1st
 PIC16F18424                  Midrange/1.8V Min MSB1st
 PIC16F18425                  Midrange/1.8V Min MSB1st
 PIC16F18426                  Midrange/1.8V Min MSB1st
@@ -787,11 +815,24 @@ PIC24F08KL301                Others/PIC24
 PIC24F08KL302                Others/PIC24
 PIC24F08KL401                Others/PIC24
 PIC24F08KL402                Others/PIC24
+PIC24F08KM101                Others/PIC24
+PIC24F08KM102                Others/PIC24
+PIC24F08KM202                Others/PIC24
+PIC24F08KM204                Others/PIC24
 PIC24F16KA101                Others/PIC24
 PIC24F16KA102                Others/PIC24
+PIC24F16KA301                Others/PIC24
+PIC24F16KA302                Others/PIC24
+PIC24F16KA304                Others/PIC24
 PIC24F16KL401                Others/PIC24
 PIC24F16KL402                Others/PIC24
+PIC24F16KM102                Others/PIC24
+PIC24F16KM104                Others/PIC24
+PIC24F16KM202                Others/PIC24
+PIC24F16KM204                Others/PIC24
 PIC24F32KA301                Others/PIC24
+PIC24F32KA302                Others/PIC24
+PIC24F32KA304                Others/PIC24
 PIC24FJ16GA002               Others/PIC24
 PIC24FJ16GA004               Others/PIC24
 PIC24FJ32GA002               Others/PIC24
@@ -809,6 +850,9 @@ PIC24FJ64GA008               Others/PIC24
 PIC24FJ64GA010               Others/PIC24
 PIC24FJ64GA102               Others/PIC24
 PIC24FJ64GA104               Others/PIC24
+PIC24FJ64GA106               Others/PIC24
+PIC24FJ64GA108               Others/PIC24
+PIC24FJ64GA110               Others/PIC24
 PIC24FJ64GB002               Others/PIC24
 PIC24FJ64GB004               Others/PIC24
 PIC24FJ64GB106               Others/PIC24
@@ -838,7 +882,20 @@ PIC24FJ256GA110              Others/PIC24
 PIC24FJ256GB106              Others/PIC24
 PIC24FJ256GB108              Others/PIC24
 PIC24FJ256GB110              Others/PIC24
+PIC24FV08KM101               Others/PIC24
+PIC24FV08KM102               Others/PIC24
+PIC24FV08KM202               Others/PIC24
+PIC24FV08KM204               Others/PIC24
+PIC24FV16KA301               Others/PIC24
+PIC24FV16KA302               Others/PIC24
+PIC24FV16KA304               Others/PIC24
+PIC24FV16KM102               Others/PIC24
+PIC24FV16KM104               Others/PIC24
+PIC24FV16KM202               Others/PIC24
+PIC24FV16KM204               Others/PIC24
 PIC24FV32KA301               Others/PIC24
+PIC24FV32KA302               Others/PIC24
+PIC24FV32KA304               Others/PIC24
 PIC24HJ12GP201               Others/PIC24
 PIC24HJ12GP202               Others/PIC24
 PIC24HJ16GP304               Others/PIC24
@@ -935,7 +992,9 @@ DSPIC33FJ256GP510A           Others/dsPIC33
 DSPIC33FJ256GP710            Others/dsPIC33
 DSPIC33FJ256GP710A           Others/dsPIC33
 DSPIC33FJ256MC510            Others/dsPIC33
+DSPIC33FJ256MC510A           Others/dsPIC33
 DSPIC33FJ256MC710            Others/dsPIC33
+DSPIC33FJ256MC710A           Others/dsPIC33
 DSPIC30F2010                 Others/dsPIC30
 DSPIC30F2011                 Others/dsPIC30
 DSPIC30F2012                 Others/dsPIC30
@@ -951,10 +1010,15 @@ DSPIC30F5011                 Others/dsPIC30
 DSPIC30F5013                 Others/dsPIC30
 DSPIC30F5015                 Others/dsPIC30
 DSPIC30F5016                 Others/dsPIC30
+DSPIC30F6010                 Others/dsPIC30
 DSPIC30F6010A                Others/dsPIC30
+DSPIC30F6011                 Others/dsPIC30
 DSPIC30F6011A                Others/dsPIC30
+DSPIC30F6012                 Others/dsPIC30
 DSPIC30F6012A                Others/dsPIC30
+DSPIC30F6013                 Others/dsPIC30
 DSPIC30F6013A                Others/dsPIC30
+DSPIC30F6014                 Others/dsPIC30
 DSPIC30F6014A                Others/dsPIC30
 DSPIC30F6015                 Others/dsPIC30
 DSPIC30F1010                 Others/dsPIC30 SMPS
@@ -978,16 +1042,27 @@ PIC32MX110F016D              PIC32
 PIC32MX120F032B              PIC32
 PIC32MX120F032C              PIC32
 PIC32MX120F032D              PIC32
+PIC32MX120F064H              PIC32
 PIC32MX130F064B              PIC32
 PIC32MX130F064C              PIC32
 PIC32MX130F064D              PIC32
+PIC32MX130F128H              PIC32
+PIC32MX130F128L              PIC32
 PIC32MX130F256B              PIC32
 PIC32MX130F256D              PIC32
 PIC32MX150F128B              PIC32
 PIC32MX150F128C              PIC32
 PIC32MX150F128D              PIC32
+PIC32MX150F256H              PIC32
+PIC32MX150F256L              PIC32
+PIC32MX154F128B              PIC32
+PIC32MX154F128D              PIC32
 PIC32MX170F256B              PIC32
 PIC32MX170F256D              PIC32
+PIC32MX170F512H              PIC32
+PIC32MX170F512L              PIC32
+PIC32MX174F256B              PIC32
+PIC32MX174F256D              PIC32
 PIC32MX210F016B              PIC32
 PIC32MX210F016C              PIC32
 PIC32MX210F016D              PIC32
@@ -997,31 +1072,93 @@ PIC32MX220F032D              PIC32
 PIC32MX230F064B              PIC32
 PIC32MX230F064C              PIC32
 PIC32MX230F064D              PIC32
+PIC32MX230F128H              PIC32
+PIC32MX230F128L              PIC32
 PIC32MX230F256B              PIC32
 PIC32MX230F256D              PIC32
 PIC32MX250F128B              PIC32
 PIC32MX250F128C              PIC32
 PIC32MX250F128D              PIC32
+PIC32MX250F256H              PIC32
+PIC32MX250F256L              PIC32
+PIC32MX254F128B              PIC32
+PIC32MX254F128D              PIC32
 PIC32MX270F256B              PIC32
 PIC32MX270F256D              PIC32
 PIC32MX270F256DB             PIC32
+PIC32MX270F512H              PIC32
+PIC32MX270F512L              PIC32
+PIC32MX274F256B              PIC32
+PIC32MX274F256D              PIC32
 PIC32MX320F032H              PIC32
 PIC32MX320F064H              PIC32
 PIC32MX320F128H              PIC32
 PIC32MX320F128L              PIC32
+PIC32MX330F064H              PIC32
+PIC32MX330F064L              PIC32
 PIC32MX340F128H              PIC32
 PIC32MX340F128L              PIC32
 PIC32MX340F256H              PIC32
 PIC32MX340F512H              PIC32
+PIC32MX350F128H              PIC32
+PIC32MX350F128L              PIC32
+PIC32MX350F256H              PIC32
+PIC32MX350F256L              PIC32
 PIC32MX360F256L              PIC32
 PIC32MX360F512L              PIC32
+PIC32MX370F512H              PIC32
+PIC32MX370F512L              PIC32
 PIC32MX420F032H              PIC32
+PIC32MX430F064H              PIC32
+PIC32MX430F064L              PIC32
 PIC32MX440F128H              PIC32
 PIC32MX440F128L              PIC32
 PIC32MX440F256H              PIC32
 PIC32MX440F512H              PIC32
+PIC32MX450F128H              PIC32
+PIC32MX450F128L              PIC32
+PIC32MX450F256H              PIC32
+PIC32MX450F256L              PIC32
+PIC32MX450F256LB             PIC32
 PIC32MX460F256L              PIC32
 PIC32MX460F512L              PIC32
+PIC32MX470F512H              PIC32
+PIC32MX470F512L              PIC32
+PIC32MX470F512LB             PIC32
+PIC32MX530F128H              PIC32
+PIC32MX530F128L              PIC32
+PIC32MX534F064H              PIC32
+PIC32MX534F064L              PIC32
+PIC32MX550F256H              PIC32
+PIC32MX550F256L              PIC32
+PIC32MX564F064H              PIC32
+PIC32MX564F064L              PIC32
+PIC32MX564F128H              PIC32
+PIC32MX564F128L              PIC32
+PIC32MX570F512H              PIC32
+PIC32MX570F512L              PIC32
+PIC32MX575F256H              PIC32
+PIC32MX575F256L              PIC32
+PIC32MX575F512H              PIC32
+PIC32MX575F512L              PIC32
+PIC32MX664F064H              PIC32
+PIC32MX664F064L              PIC32
+PIC32MX664F128H              PIC32
+PIC32MX664F128L              PIC32
+PIC32MX675F256H              PIC32
+PIC32MX675F256L              PIC32
+PIC32MX675F512H              PIC32
+PIC32MX675F512L              PIC32
+PIC32MX695F512H              PIC32
+PIC32MX695F512L              PIC32
+PIC32MX764F128H              PIC32
+PIC32MX764F128L              PIC32
+PIC32MX775F256H              PIC32
+PIC32MX775F256L              PIC32
+PIC32MX775F512H              PIC32
+PIC32MX775F512L              PIC32
+PIC32MX795F512H              PIC32
+PIC32MX795F512L              PIC32
 11LC010                      EEPROMS/11LC
 11LC020                      EEPROMS/11LC
 11LC040                      EEPROMS/11LC

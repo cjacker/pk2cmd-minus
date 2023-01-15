@@ -42,7 +42,7 @@ Ccmd_app::Ccmd_app(void)
 	usingLowVoltageErase = false;
 	resetOnExit = false;
 	Pk2Operation = true;
-	resetPK3OnExit = true;
+	resetPK3OnExit = false;		// Changed default to FALSE 30.6.2022
 	pk2UnitIndex = 0;
 	ReturnCode = OPSUCCESS;
 }
@@ -162,17 +162,19 @@ void Ccmd_app::PK2_CMD_Entry(int argc, _TCHAR* argv[])
 void Ccmd_app::ResetAtExit(void)
 {
 	// Pickit3 needs reset on exit otherwise it stuck on next open
+	// Or maybe not, if not trying to set config 2 and claim usb interface.
+	// 30.6.2022 changed resetPK3OnExit to FALSE by default (set at near top of this file)
 	if (resetOnExit || (PicFuncs.type() == Pickit3 && resetPK3OnExit))
 	{
 		printf("Resetting PICkit device...\n");
 		fflush(stdout);
 		PicFuncs.ResetPICkit2(); // must re-enumerate with new UnitID in serial string
 	}
-	if (PicFuncs.type() == Pickit3 && resetPK3OnExit == false)
-	{
-		printf("-T and/or -R options selected - Not resetting PICkit 3 device.\n");
-		fflush(stdout);
-	}
+	//if (PicFuncs.type() == Pickit3 && resetPK3OnExit == false)
+	//{
+	//	printf("-T and/or -R options selected - Not resetting PICkit 3 device.\n");
+	//	fflush(stdout);
+	//}
 }
 
 bool Ccmd_app::Pk2OperationCheck(int argc, _TCHAR* argv[])
@@ -2737,6 +2739,7 @@ bool Ccmd_app::checkHelp1(int argc, _TCHAR* argv[])
 				printf("There are no parameters for this command.\n");
 				printf("\n");
 				printf("Syntax Example -x\n");
+				break;
 
 			case 'y':
 			case 'Y':
@@ -2980,7 +2983,7 @@ bool Ccmd_app::checkHelp2(int argc, _TCHAR* argv[], bool loadDeviceFileFailed)
 						}
 						else
 						{
-							printf ("OS Firmware Version:   PICkit 2 not found\n\n");
+							printf ("OS Firmware Version:   PICkit 2/3 not found\n\n");
 						}
 
 					}

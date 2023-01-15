@@ -144,7 +144,24 @@
 //          and TrevorW on thread https://www.microchip.com/forums/m764694.aspx
 // Bug Fix: Increased the size of the array "DevicePartParams PartsList[1500]" from 1024 in DeviceFile.h
 //          as the latest device file has exceeded 1024 parts.
-
+// version 1.23.01 - 16 June 2022 JAKA
+// Bug Fix: Disable resetting of PICkit3 also if -s or -s# options are used. With these options, the
+//          resetting causes PICkit3 to go into some weird state and requires re-plugging before it
+//          starts to work again.
+// version 1.23.02 - 9 July 2022 JAKA
+// Bug Fix: Disabled resetting of PICkit3 completely. On Linux, it was needed to solve PICkit3 not
+//          found problem, when pk2cmd was run more than once. It seems that the stuck was caused by
+//          first trying to set configuration 2 (which PICkit3 scripting firmware doesn't implement)
+//          and then claiming the USB device. Disabling these two functions, the PICkit3 doesn't stuck
+//          on Linux anymore. On Windows, the resetting wasn't needed at all, and it was actually
+//          causing stuck problems (with -s option), rather than solving them. Code to enable resetting
+//          is still there, set resetPK3OnExit to TRUE on cmd_app.cpp to re-enable it.
+// Bug Fix: Specifying /x? was printing help for /y option as well. Fixed - thanks to Tony!
+// version 1.23.03 - 21 July 2022 JAKA
+// Bug Fix: Fixed blank section skipping on PIC24/dsPIC
+// version 1.23.04 - 15 November 2022 JAKA
+// Bug Fix: Changed how different PIC32MX families are recognized. Now works properly with all 5xx
+//          devices.
 
 #include "stdafx.h"
 #include "stdio.h"

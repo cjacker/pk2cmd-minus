@@ -314,32 +314,34 @@ pickit_dev *usbPickitOpen(int unitIndex, char *unitID)
 	#endif
 
 	#ifdef CLAIM_USB
-
-						if (usb_set_configuration(d, CONFIG_VENDOR) < 0)	// if config fails with CONFIG_VENDOR,
-						{
-							if (usb_set_configuration(d, CONFIG_HID) < 0)	// it may be in bootloader, try CONFIG_HID
+						if (device->descriptor.idProduct == pickit2_productID) {	// Do not set configuration 2 for PICkit3, because it doesn't have it!
+														// Trying to set config 2 or claim interface causes PICkit3 to halt on Linux.
+							if (usb_set_configuration(d, CONFIG_VENDOR) < 0)	// if config fails with CONFIG_VENDOR,
+							{
+								if (usb_set_configuration(d, CONFIG_HID) < 0)	// it may be in bootloader, try CONFIG_HID
+								{
+									if (verbose)
+									{
+										printf("Error setting USB configuration.\n");
+										fflush(stdout);
+									}
+	
+									return NULL;
+								}
+							}
+	
+							if (usb_claim_interface(d, pickit_interface))
 							{
 								if (verbose)
 								{
-									printf("Error setting USB configuration.\n");
+									printf("Claim failed-- the USB PICkit2 is in use by another driver.\n"
+										"Do a `dmesg` to see which kernel driver has claimed it--\n"
+										"You may need to `rmmod hid` or patch your kernel's hid driver.\n");
 									fflush(stdout);
 								}
-
+	
 								return NULL;
 							}
-						}
-
-						if (usb_claim_interface(d, pickit_interface))
-						{
-							if (verbose)
-							{
-								printf("Claim failed-- the USB PICkit2 is in use by another driver.\n"
-									"Do a `dmesg` to see which kernel driver has claimed it--\n"
-									"You may need to `rmmod hid` or patch your kernel's hid driver.\n");
-								fflush(stdout);
-							}
-
-							return NULL;
 						}
 	#endif
 
